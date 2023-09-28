@@ -1,0 +1,96 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    margin: 0;
+}
+
+nav {
+    color: white;
+    background-image:linear-gradient(to left,#2104D9,#020873,#020659);
+    margin: none;
+    padding: none;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-grid;
+    grid-template-rows: auto;
+    grid-template-columns: max-content auto max-content;
+    
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    background-color: #590242;
+}
+
+#smooth {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-image: linear-gradient(to right,#2104D9,#020873,#020659);
+    color: white;
+}
+
+footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#trend {
+    position: relative;
+    height: 425px;
+    width: auto;
+    display: flex;  
+}
+
+article{
+    max: width 100vw;;
+    height: auto;
+    margin: 5px;
+    
+}
+
+#title{
+    
+    bottom: 10px;
+}
+
+#personal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    }
+
+#playlist {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#curated {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+audio::-webkit-media-controls-mute-button {
+
+
+}
+
+audio::-webkit-media-controls-play-button {
+
+}
+
+audio::-webkit-media-controls-enclosure {
+
+}
