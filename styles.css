@@ -4,8 +4,8 @@ html {
 
 body{
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
+    /*grid-template-rows: auto;
+    grid-template-columns: 1fr;*/
     margin: 0;
 }
 
@@ -47,28 +47,81 @@ footer{
     margin-top: 25px;
 }
 
-#trend {
+/*#trending {
     position: relative;
     height: 425px;
     width: auto;
     display: flex;  
+    z-index: 2;
+}*/
+
+.scroll{
+    display: flex;
+    grid-template-columns: repeat(5,1fr);
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
-article{
+.scroll section{
+    margin: 10;
+    position: relative;
+}
+.scroll div{
+    position: absolute;
+    top: 251px;
+    background-color: rgba(255,255,255,.75);
+    padding: 5px;
+    height: 50px;
+    width: 350px;
+}
+
+dl{
+    display: flex;
+}
+
+dt{
+    padding-right: 5px;
+}
+
+audio {
+    position: absolute;
+    /*z-index: 1;*/
+    left: 5px;
+    bottom: 150px;
+    opacity: .5;
+}
+
+.more{
+    color: white;
+    background-color: #590242;
+    border-radius: 5px;
+    padding: 10px;
+    display: block;
+    text-align: center;
+}
+
+.more:hover{
+    background-color: #020659;
+}
+
+/*article{
     max: width 100vw;;
     height: auto;
     margin: 5px;
     
 }
+*/
 
-#title{
+/*#title{
     
     bottom: 10px;
 }
-
+*/
 #personal {
     grid-column-start: 1;
     grid-column-end: 2;
+    background-color: #0d8dfb;
+    color: white;
     }
 
 #playlist {
@@ -80,6 +133,13 @@ article{
 #curated {
     grid-column-start: 2;
     grid-column-end: 3;
+    background-color: #2104D9;
+    color: white;
+}
+
+.pers{
+    display: inline-block;
+    margin-right: 5px;
 }
 
 audio::-webkit-media-controls-mute-button {
@@ -94,3 +154,60 @@ audio::-webkit-media-controls-play-button {
 audio::-webkit-media-controls-enclosure {
 
 }
+
+#playlist {
+    display: flex;
+
+}
+
+#personal1,#personal2,#personal3,#personal4,#personal4,#personal5 {
+    position: relative;
+    background-color: #2699fb;
+}
+
+
+
+#item1,#item2,#item3,#item4,#item5{
+    position: relative;
+    background-color: #020873;
+}
+
+#trending ::-webkit-scrollbar {
+
+}
+#trending ::-webkit-scrollbar-track {
+
+}
+#trending ::-webkit-scrollbar-thumb {
+
+}
+#trending ::-webkit-scrollbar-thumb:hover {
+
+}
+#playlists ::-webkit-scrollbar, #curated ::-webkit-scrollbar {
+
+}
+#playlists ::-webkit-scrollbar-track, #curated ::-webkit-scrollbar-track  {
+
+}
+#playlists ::-webkit-scrollbar-thumb, #curated ::-webkit-scrollbar-thumb {
+
+}
+#playlists ::-webkit-scrollbar-thumb:hover, #curated ::-webkit-scrollbar-thumb:hover {
+
+}
+
+@media screen and (min-width: 834px) {
+    
+}  {
+    
+    
+}
+
+p,h4 {
+    flex-wrap: wrap;
+}
+
+
+
+
